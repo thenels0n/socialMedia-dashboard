@@ -1,13 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App { 
+    background-color: hsl(230, 17%, 14%);
 }
+
+.container {
+    padding: 20px 30px;
+    display: block;
+    justify-content: space-between;
+}
+
+.header {
+    background-color: hsl(232, 19%, 15%);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 0;
+    width: 100%;
+    height: 40vh;
+}
+
+.header-toggle { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.parent-button { 
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    background: linear-gradient(to right, #378fe6, #3eda82);
+    padding: 4px 6px;
+    border-radius: 30px;
+    min-width: 50px;
+    cursor: pointer;
+
+}
+
+.left-button { 
+    padding: 9px;
+    margin-right: 1px;
+    border-radius: 50%;
+    border: none;
+    background: hsl(230, 17%, 14%);
+    cursor: pointer;
+    
+}
+
+.right-button { 
+    padding: 9px;
+    margin-left: 1px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(230, 17%, 14%);
+    cursor: pointer;
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 23px;
+    line-height: 10px;
+
+}
+
+h3 {
+    font-size: 18px;
+    color: hsl(228, 34%, 66%);
+    margin-top: 15px;
+}
+
+hr {
+    margin: 30px 0px;
+}
+
+.followers .container { 
+    margin-top: -100px;
+}
+
+.facebook { 
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.facebook-icon { 
+    color: hsl(208, 92%, 53%);
+}
+
+.twitter { 
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.twitter-icon { 
+    color: hsl(203, 89%, 53%);
+}
+
+.instagram { 
+    border-width: 5px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(to right, rgb(253, 196, 104),  rgb(223, 73, 150)) 100% 0 0 0;
+}
+
+.instagram-icon { 
+    color: linear-gradient(to right, #fdc468, #df4996);
+}
+
+.youtube { 
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.youtube-icon { 
+    color: hsl(348, 97%, 39%);
+}
+
+.white-font { 
+    color: hsl(0, 0%, 100%);
+}
+
+.blue-font { 
+    color: hsl(228, 34%, 66%);
+}
+
+.green-font { 
+    color: hsl(163, 72%, 41%);
+}
+
+.red-font { 
+    color: hsl(356, 69%, 56%);
+}
+
+.social-icons {
+    font-size: 25px;
+}
+
+.card-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-social h5 {
+    padding-left: 10px;
+}
+
+.followers-container {
+    background-color: hsl(228, 28%, 20%);
+    text-align: center;
+    padding: 15px;
+    margin: 30px 0 0px 0;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+/** .followers .container :hover { 
+    background-color:  hsl(230, 24%, 25%);
+}
+*/
+.followers-container h1 {
+    font-size: 40px;
+    line-height: 10px;
+}
+
+.followers-container h4 {
+    font-size: 20px;
+    line-height: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    min-width: 90%;
+}
+
+.followers-container h6 {
+    font-size: 15px;
+    margin-bottom: 8px;
+
+}
+
+.side-font { 
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.overview-grid { 
+    padding: 20px 30px;
+}
+
+.overview {
+    background-color: hsl(228, 28%, 20%);
+    padding: 10px 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.overview:hover { 
+    background-color:  hsl(230, 24%, 25%);
+}
+
+.overview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overview-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.overview-body-big-text {
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+
+
+.overview-title {
+    font-size: 20px;
+    line-height: 10px;
+}
+
+
+.attribution { 
+    width: 60%;
+    margin-left: auto;
+}
+
+@media (min-width: 1440px) { 
+    .container { 
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 80px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .overview-grid { 
+        padding: 20px 80px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .header {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 40vh;
+    }
+
+    .header-toggle h3 {
+        margin-right: 10px;
+    }
+
+    .followers .container { 
+        margin-top: -170px;
+    }
+
+    .followers-container {
+        min-width: 280px;
+    }
+
+    .overview {
+        background-color: hsl(228, 28%, 20%);
+        padding: 0px 30px;
+        margin: 0px 0;
+    }
+    
+
+    .overview-grid .containerr { 
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 23% 23.5% 23.5% 23%;
+
+        padding-block: 30px;
+        width: (95%, 70rem);
+        margin-inline: auto;
+    }
+
+    .overview-title {
+        font-size: 13px;
+        line-height: 10px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
