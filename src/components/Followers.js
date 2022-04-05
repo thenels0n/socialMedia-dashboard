@@ -9,7 +9,7 @@ export default function Followers(props) {
 
         <div className='followers'>
             <div className="container">
-                <div className="followers-container facebook" style={{backgroundColor: props.bg}}>
+                <div className="followers-container  facebook" style={{backgroundColor: props.bg}}>
                     <div className="card-social">
                         <AiFillFacebook className='social-icons facebook-icon'/>
                         <h5 className='blue-font'>@nathanf</h5>
