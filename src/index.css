@@ -234,11 +234,14 @@ h6 {
     line-height: 10px;
 }
 
-
 .attribution { 
-    width: 60%;
-    margin-left: auto;
-}
+    bottom: 0;
+    top: 0;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+  }
 
 @media (min-width: 1440px) { 
     .container { 

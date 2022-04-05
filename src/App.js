@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import Followers from './components/Followers'
 import Overview from './components/Overview';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -35,10 +36,8 @@ function App() {
           titleColor = { theme ? '' : 'hsl(228, 34%, 66%)'}
       />
 
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://github.com/thenels0n/">thenelson</a>.
-      </div>
+      <Footer color = { theme ? 'hsl(0, 0%, 100%)'  : ' hsl(230, 17%, 14%)'}
+ />
     </div>
   );
 }
