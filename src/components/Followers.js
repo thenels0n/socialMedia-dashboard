@@ -28,7 +28,7 @@ export default function Followers(props) {
                     <h4 className='blue-font'>F&nbsp;o&nbsp;l&nbsp;l&nbsp;o&nbsp;w&nbsp;e&nbsp;r&nbsp;s</h4>
                     <h6 className='green-font'><BsFillCaretUpFill className='side-font green-font' />99 Today</h6>
                 </div>
-
+ 
                 <div className="followers-container instagram"  style={{backgroundColor: props.bg}}>
                     <div className="card-social">
                         <BsInstagram className='social-icons instagram-icon' /> 
